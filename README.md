@@ -1,7 +1,7 @@
 
 # PDF-Viewer
 
-Here is my implementation of a custom PDF viewer using the PDF.js library. I created this for my [website](https://itsjonathanthompson.com) (of which the files can be found [here](https://github.com/jethomps0n/My-Portfolio-Website)) to better seamlessly integrate this pdf viewer with the style of the rest of my site. I've linked two demo pages below to experience it in action.
+Here is my implementation of a custom PDF viewer using the [PDF.js library](https://github.com/mozilla/pdf.js). I created this for my [website](https://itsjonathanthompson.com) (of which the files can be found [here](https://github.com/jethomps0n/My-Portfolio-Website)) to better seamlessly integrate this pdf viewer with the style of the rest of my site. I've linked two demo pages below to experience it in action.
 
 [PDF Viewer w/page styling](https://jethomps0n.github.io/PDF-Viewer/)
 <br>
