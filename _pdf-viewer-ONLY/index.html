@@ -23,6 +23,20 @@
     <link rel="icon" type="image/x-icon" href="../resources/images/icons/favicon.png">
     <link rel="stylesheet" href="../resources/css/pdf-viewer.css">
     <script type="module" src="../resources/js/pdf-viewer.js" defer></script>
+
+    <style>
+         @font-face {
+            font-family: "Reddit Sans";
+            src: url("../resources/fonts/Reddit-Sans/RedditSans-Regular.woff2") format("woff2"),
+                url("../resources/fonts/Reddit-Sans/RedditSans-Regular.ttf") format("truetype");
+            font-weight: 400;	
+        }
+
+        html {
+            font-size: 24px;
+            font-family: "Reddit Sans", Tahoma, Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
 </head>
 <body>
     <main style="margin: 42px auto; max-width: 1400px;">
@@ -105,13 +119,6 @@
     <footer>
         <span class="breadcrumbs"><a href="../index.html">View Original PDF Viewer Example</a></span>
         <style>
-            @font-face {
-                font-family: "Reddit Sans";
-                src: url("../resources/fonts/Reddit-Sans/RedditSans-Regular.woff2") format("woff2"),
-                    url("../resources/fonts/Reddit-Sans/RedditSans-Regular.ttf") format("truetype");
-                font-weight: 400;	
-            }
-
             .breadcrumbs {
                 font-family: "Reddit Sans", Tahoma, Verdana, Geneva, Tahoma, sans-serif;
                 display: flex;
@@ -124,7 +131,7 @@
             .breadcrumbs a {
                 color: hsla(228, 48%, 60%, 1);
                 text-decoration: none;
-                font-size: 21.6px;
+                font-size: 0.9rem;
                 transition: color 300ms ease;
                 background-color: #15274C;
                 padding: 20px 30px;
