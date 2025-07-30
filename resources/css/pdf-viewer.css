@@ -399,7 +399,6 @@ body.no-scroll {
 #pdf-modal #pdf-canvas-container::-webkit-scrollbar-track,
 #pdf-modal #pdf-sidebar::-webkit-scrollbar-track {
     background: hsla(201, 100%, 10%, 1);
-    border-radius: 5px;
 }
 
 #pdf-canvas-container::-webkit-scrollbar-thumb,
