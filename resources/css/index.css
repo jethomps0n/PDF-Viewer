@@ -1,0 +1,407 @@
+@font-face {
+    font-family: "Reddit Sans";
+    src: url("/resources/fonts/Reddit-Sans/RedditSans-Regular.woff2") format("woff2"),
+         url("/resources/fonts/Reddit-Sans/RedditSans-Regular.ttf") format("truetype");
+    font-weight: 400;	
+}
+
+@font-face {
+    font-family: "Reddit Sans";
+    src: url("/resources/fonts/Reddit-Sans/RedditSans-Light.woff2") format("woff2"),
+         url("/resources/fonts/Reddit-Sans/RedditSans-Light.ttf") format("truetype");
+    font-weight: 300;	
+}
+
+@font-face {
+    font-family: "Reddit Sans";
+    src: url("/resources/fonts/Reddit-Sans/RedditSans-Bold.woff2") format("woff2"),
+         url("/resources/fonts/Reddit-Sans/RedditSans-Bold.ttf") format("truetype");
+    font-weight: 700;	
+}
+
+@font-face {
+    font-family: "Reddit Sans";
+    src: url("/resources/fonts/Reddit-Sans/RedditSans-ExtraBold.woff2") format("woff2"),
+         url("/resources/fonts/Reddit-Sans/RedditSans-ExtraBold.ttf") format("truetype");
+    font-weight: 800;	
+}
+
+html {
+    font-family: "Reddit Sans", Tahoma, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+/* Safari-specific background override */
+@supports (-webkit-touch-callout: none) {
+    html {
+        background: #15274C; /* Solid theme color for Safari */
+    }
+}
+
+body {
+    background: radial-gradient(circle 1090px at center, hsla(221, 56%, 19%, 1), hsla(358, 76%, 7%, 1));
+    background-size: 1650px 945px;
+    background-attachment: fixed;
+    background-clip: padding-box;
+    margin: 0px;
+    padding: 25px 8px 8px 8px;
+}
+
+#project-page {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0 28px 0 28px;
+    margin: 42px auto;
+    max-width: 1300px;
+    position: relative;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-touch-callout: none) {
+    #credits-container::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    #credits-container::-webkit-scrollbar-track {
+        background: hsla(201, 100%, 10%, 1);
+        border-radius: 5px;
+    }
+    #credits-container::-webkit-scrollbar-thumb {
+        background: hsla(228, 48%, 60%, 1);
+        border-radius: 5px;
+        border: 2px solid hsla(201, 100%, 10%, 1);
+    }
+    #credits-container::-webkit-scrollbar-thumb:hover {
+        background: hsla(228, 48%, 70%, 1);
+    }
+    #credits-container::-webkit-scrollbar-thumb:active {
+        background: hsla(228, 48%, 50%, 1);
+    }
+  }
+}
+
+#content-box {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+#project {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    z-index: 5;
+    transition: all 300ms ease;
+    will-change: transform;
+}
+
+#specs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+}
+
+#contentTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: hsla(0,0%,100%,1);
+    margin: 0 0 5px 0;
+    max-width: 80%;
+    transition: color 300ms ease;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Add gap between title and version badge */
+}
+
+#date {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 0.7rem;
+    color: hsla(0,0%,80%,1);
+    margin: 0;
+    line-height: 1.9rem;
+    transition: color 300ms ease;
+}
+
+#more {
+    overflow: hidden;
+    position: relative;
+    border: 2px solid hsla(248,9%,45%,0.5);
+    border-radius: 25px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    z-index: 5;
+    transition: background 300ms ease;
+}
+
+#more:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+#attachments {
+  float: right;
+  width: 120px;
+  font-size: 80%;
+  margin-left: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 300ms ease;
+  will-change: transform, box-shadow;
+}
+
+#attachments:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+#screenplay {
+    width: 100%;
+    display: block;
+    transition: all 300ms ease;
+}
+
+#attachments:hover #screenplay {
+    filter: brightness(1.1) contrast(1.1);
+}
+
+#view-container {
+  text-align: center;
+  background: hsla(214,100%,45%,1);
+  color: #fff;
+  font-weight: 700;
+  width: 100%;
+  transition: all 300ms ease;
+}
+
+#attachments:hover #view-container {
+    background: hsla(214,100%,55%,1);
+}
+
+#description {
+    font-size: 0.9rem;
+    color: hsla(0,0%,100%,1);
+    margin: 0;
+    line-height: 1.5;
+    transition: color 300ms ease;
+}
+
+#description p {
+    margin: 0;
+    transition: all 300ms ease;
+}
+
+#description a {
+    color: hsla(228, 48%, 60%, 1);
+    transition: all 300ms ease;
+}
+
+#description a:hover {
+    color: hsla(228, 48%, 70%, 1);
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.role-tag:focus,
+.type-tag:focus,
+#attachments:focus,
+.credits-button:focus,
+.view-screenplay-button:focus,
+.version-button:focus {
+    outline: 2px solid hsla(228,48%,60%,1);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .role-tag:hover,
+    .type-tag:hover,
+    #attachments:hover {
+        transform: none;
+    }
+}
+
+.project-buttons {
+    display: none;
+}
+
+@media (max-width: 1124px) {
+    #contentTitle {
+        font-size: 1.1rem;
+        line-height: 1;
+    }
+
+    #date {
+        font-size: 0.55rem;
+        line-height: 1.32rem
+    }
+}
+
+@media (max-width: 1020px) {
+    #project-page {
+        margin-top: 32px;
+        padding: 0 8px;
+        gap: 20px;
+    }
+
+    #info {
+        padding: 15px;
+    }
+    
+    .project-buttons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        font-size: 0.75rem;
+    }
+
+    .view-screenplay-button, .version-button {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #project-page {
+        gap: 15px;
+    }
+    
+    .role-tag, .type-tag {
+        font-size: 0.75rem;
+        padding: 1px 5px;
+        border-radius: 5px;
+    }
+    
+    #attachments {
+        width: 100px;
+        font-size: 75%;
+        margin-left: 15px;
+    }
+    
+    #description {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+    
+    #more {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 640px) {
+    #info {
+        padding: 10px 5px 5px 5px;
+    }
+    
+    #specs {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    #contentTitle {
+        max-width: 100%;
+        font-size: 0.9rem;
+    }
+    
+    #date {
+        font-size: 0.5rem;
+        align-self: flex-start;
+        margin: 0;
+        line-height: 1;
+    }
+    
+    #attachments {
+        display: none;
+    }
+    
+    .project-buttons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        font-size: 0.7rem;
+    }
+
+    .view-screenplay-button {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        background: hsla(214, 100%, 45%, 0.9);
+        border: 1px solid hsla(214, 100%, 55%, 0.8);
+        color: white;
+        padding: 6px 14px;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 100ms ease-out;
+        text-decoration: none;
+        font-size: 0.7rem;
+        font-weight: 500;
+        line-height: 1;
+    }
+    
+    .view-screenplay-button:hover {
+        background: hsla(214, 100%, 55%, 1);
+        border-color: hsla(214, 100%, 65%, 1);
+        transform: translateY(-1px);
+    }
+}
+
+@media (max-width: 520px) {    
+    #specs {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+
+    #description {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .project-buttons {
+        font-size: 0.6rem;
+        gap: 5px;
+    }
+
+    .view-screenplay-button {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .project-buttons {
+        font-size: 0.52rem;
+        gap: 4px;
+    }
+
+    .view-screenplay-button {
+        font-size: 0.52rem;
+    }
+}
