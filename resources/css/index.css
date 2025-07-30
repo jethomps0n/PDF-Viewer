@@ -1,28 +1,28 @@
 @font-face {
     font-family: "Reddit Sans";
-    src: url("/resources/fonts/Reddit-Sans/RedditSans-Regular.woff2") format("woff2"),
-         url("/resources/fonts/Reddit-Sans/RedditSans-Regular.ttf") format("truetype");
+    src: url("../fonts/Reddit-Sans/RedditSans-Regular.woff2") format("woff2"),
+         url("../fonts/Reddit-Sans/RedditSans-Regular.ttf") format("truetype");
     font-weight: 400;	
 }
 
 @font-face {
     font-family: "Reddit Sans";
-    src: url("/resources/fonts/Reddit-Sans/RedditSans-Light.woff2") format("woff2"),
-         url("/resources/fonts/Reddit-Sans/RedditSans-Light.ttf") format("truetype");
+    src: url("../fonts/Reddit-Sans/RedditSans-Light.woff2") format("woff2"),
+         url("../fonts/Reddit-Sans/RedditSans-Light.ttf") format("truetype");
     font-weight: 300;	
 }
 
 @font-face {
     font-family: "Reddit Sans";
-    src: url("/resources/fonts/Reddit-Sans/RedditSans-Bold.woff2") format("woff2"),
-         url("/resources/fonts/Reddit-Sans/RedditSans-Bold.ttf") format("truetype");
+    src: url("../fonts/Reddit-Sans/RedditSans-Bold.woff2") format("woff2"),
+         url("../fonts/Reddit-Sans/RedditSans-Bold.ttf") format("truetype");
     font-weight: 700;	
 }
 
 @font-face {
     font-family: "Reddit Sans";
-    src: url("/resources/fonts/Reddit-Sans/RedditSans-ExtraBold.woff2") format("woff2"),
-         url("/resources/fonts/Reddit-Sans/RedditSans-ExtraBold.ttf") format("truetype");
+    src: url("../fonts/Reddit-Sans/RedditSans-ExtraBold.woff2") format("woff2"),
+         url("../fonts/Reddit-Sans/RedditSans-ExtraBold.ttf") format("truetype");
     font-weight: 800;	
 }
 
