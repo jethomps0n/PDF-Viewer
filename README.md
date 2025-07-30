@@ -5,7 +5,7 @@ Here is my implementation of a custom PDF viewer using the PDF.js library. I cre
 
 [PDF Viewer w/page styling](https://jethomps0n.github.io/PDF-Viewer/)
 <br>
-[PDF Viewer ONLY](https://jethomps0n.github.io/PDF-Viewer/_pdf-viewer-ONLY)
+[PDF Viewer ONLY](https://jethomps0n.github.io/PDF-Viewer/_pdf-viewer-ONLY/)
 
 It's pretty simple, only containing the necessary elements of a PDF viewer:
 - A sidebar view with page thumbnails
